@@ -37,7 +37,7 @@ O código do dispositivo primário e secundário é praticamente idêntico, com 
 
 A seguir, segue uma explicação da saída do monitor serial para o comportamento esperado do envio de mensagens com requisição de resposta.
 
-'''
+```
 Primary Device - Initing...
 My Address: 1
 >> send:'ok?' to 0x02
@@ -48,7 +48,7 @@ RECV: 0x7E 0x01 0x19 0x6F 0x6B 0x4B 0x06 0x7E n(s)=1 n(r)=1 ASCII:'ok' CRC:OK P/
 >> recv:'ok' CRC:OK n(s)=1 n(r)=1 from 0x02
 >> resp: RR n(r)=1 to 0x02
 SEND: 0x7E 0x02 0x81 0x83 0x01 0x7E n(r)=1 P/F:0 (Super - RR)
-'''
+```
 
 ### Comportamento Esperado - Primary Device 0x01
 1. Initing...: Indica o início da execução do dispositivo primário.
